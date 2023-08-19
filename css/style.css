@@ -285,11 +285,12 @@ ul li {
         width: 100%;
     }
 
+    #logo {
+        margin-left: 15px;
+    }
+
     #nav ul {
         display: none;
-        content: '';
-        width: 24px;
-        height: 24px;
     }
 
     #mainpage .text h1 {

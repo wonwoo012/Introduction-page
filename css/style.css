@@ -123,7 +123,6 @@ ul li {
 .portfolio {
     margin-top: 140px;
     background-color: #242424;
-    height: 632px;
 }
 
 .portfolio .portfolio-title {
@@ -138,6 +137,7 @@ ul li {
     justify-content: center;
     gap: 64px;
     margin-top: 60px;
+    padding-bottom: 64px;
 }
 .portfolio-img {
     position: relative;
@@ -185,7 +185,7 @@ ul li {
     font-size: 26px;
     font-weight: 700;
 
-    margin-top: 130px;
+    margin-top: 100px;
 }
 .interest-flex {
     display: flex;
@@ -245,15 +245,85 @@ ul li {
 
 /* 반응형 */
 
-@media (max-width: 1280px) {
+@media screen and (max-width: 1280px){
     #Introduction-page {
         width: 100%;
     }
 }
 
-@media (max-width: 834px) {
+@media screen and (max-width: 834px){
+    #Introduction-page{
+        width: 100%;
+    }
+
+    #mainpage{
+        height: 481px;
+    }
+
+    #mainpage .text h1 {
+        line-height: 481px;
+        font-size: 3rem;
+    }
+
     .about {
         flex-direction: column;
         align-items: center;
+    }
+
+    .portgolio-flexbox {
+        gap: 22px;
+    }
+
+    .portgolio-flexbox .portfolio-img {
+        width: 240px;
+        height: 320px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    #Introduction-page {
+        width: 100%;
+    }
+
+    #nav ul {
+        display: none;
+        content: '';
+        width: 24px;
+        height: 24px;
+    }
+
+    #mainpage .text h1 {
+        font-size: 2rem;
+    }
+    
+    .about {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .portgolio-flexbox {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .interest-inner {
+        padding: 20px;
+        flex-direction: column;
+    }
+    .interest-inner img {
+        width: 320px;
+        height: 220px;
+    }
+    .interest-text {
+        padding: 0;
+        width: 320px;
+    }
+
+    .interest-text .title {
+        margin-top: 10px;
+    }
+
+    .interest-text .desc {
+        width: 300px;
     }
 }
